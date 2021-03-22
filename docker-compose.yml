@@ -1,0 +1,8 @@
+version: '3'
+services:
+  text_checker_app:
+    build: ./spell_grammar_checker
+    volumes:
+      - ./spell_grammar_checker:/usr/src/app
+    ports:
+      - 8090:8090
